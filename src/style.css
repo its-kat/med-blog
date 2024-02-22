@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1,
+h2 {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -12,17 +19,54 @@ body {
   background-color: #f2e8dc;
 }
 
-h1,
-h2 {
-  font-family: "Courier Prime", monospace;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: underline;
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(185, 142, 90);
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
+}
+
+.nav--container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   * flex-flow: row wrap; 
+   */
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+
+.nav--links {
+  background: rgb(127, 86, 65);
+  padding: 5px;
+  width: 150px;
+  height: 125px;
+  margin-top: 10px;
+  line-height: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
 }
 
 .headline h1 {
