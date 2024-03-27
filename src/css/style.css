@@ -39,21 +39,32 @@ a {
   margin: 0 auto;
 }
 
-.nav-flex-container {
-  /* We first create a flex layout context */
+.logo-img {
+  width: 50vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-
-  /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   * flex-flow: row wrap; 
-   */
-
-  /* Then we define how is distributed the remaining space */
   justify-content: center;
   align-items: center;
+}
+
+.logo-img img {
+  width: 75%;
+}
+
+.nav-container {
+  position: relative;
+  height: 100vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav-flex-links a {
@@ -82,8 +93,10 @@ a {
     flex-direction: column;
     text-align: center;
   }
-  .nav-flex-links {
-    margin: 10px 0;
+  .nav-flex-links ul,
+  li {
+    line-height: 30px;
+    margin: 0;
   }
 }
 
