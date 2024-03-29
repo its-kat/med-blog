@@ -18,13 +18,15 @@ h2 {
   font-family: "Courier Prime", monospace;
   font-weight: 700;
   font-style: normal;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   background-color: #c2bab0;
+  display: flex;
+  justify-content: center;
 }
 
 ul,
@@ -36,49 +38,54 @@ a {
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
-.logo-img {
-  width: 50vw;
-  position: absolute;
-  left: 50%;
-  top: 25vh;
-  transform: translateX(-50%);
+.logo-img-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.logo-img img {
+.logo-img-container img {
   max-width: 400px;
+  padding:80px
 }
 
-.nav-container {
-  position: relative;
-  height: 100vh;
+
 }
 .nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 .nav-flex-links a {
-  padding: 5px;
+  padding: 7px;
   width: 100px;
   margin: 0 10px;
   color: #181716;
-  line-height: 125px;
+  line-height: 40px;
   font-size: 16px;
-  text-align: center;
 }
 
-.headline h1 {
-  font-size: 40px;
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+footer {
+  font-size: 12px;
+  height: 30px;
+  background-color: #181716;
+  color: #c2bab0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /***** Media Query for mobile devices *****/
