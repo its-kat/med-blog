@@ -39,7 +39,7 @@ a {
 .header-container {
   width: 800px;
   position: absolute;
-  top: 15%;
+  top: 10%;
 }
 
 .logo-img-container {
@@ -53,26 +53,45 @@ a {
 }
 
 nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 60px;
+  width: 400px;
+  margin: 10% auto;
 }
 .nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+
+}
+
+.nav-links li {
+  position: relative;
+  align-items: center;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav-flex-links a {
-  padding: 12px;
-  width: 100px;
-  margin: 0 10px;
   color: #181716;
   line-height: 40px;
 }
+
+
+/* Style 3: Just animate the :after element's width from 0 to 100% */
+
+.nav-links li:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 25%;
+}
+.nav-links li:hover::after {
+  width: 100%;
+  height: 1px;
+  background-color: #181716;
+}
+
 
 .headline-text {
   text-align: center;
@@ -85,9 +104,11 @@ nav {
   font-size: 40px;
 }
 
+
+
 footer {
-  font-size: 12px;
-  height: 30px;
+  font-size: 10px;
+  height: 22px;
   background-color: #181716;
   color: #c2bab0;
   display: flex;
@@ -104,16 +125,7 @@ footer {
 
 /* ////////// small phones to small tablets: from 481px to 767px ////////// */
 @media only screen and (max-width: 767px) {
-  .nav-flex-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav-flex-links ul,
-  li {
-    line-height: 30px;
-    margin: 0;
-  }
-}
+
 
 /* //////////  small tablet to big tablet: from 768px (ipad) to 1023px ///////// */
 @media only screen and (max-width: 1023px) {
