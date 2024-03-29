@@ -39,7 +39,7 @@ a {
 .header-container {
   width: 800px;
   position: absolute;
-  top: 10%;
+  top: 18%;
 }
 
 .logo-img-container {
@@ -49,18 +49,18 @@ a {
 }
 
 .logo-img-container img {
-  max-width: 400px;
+  max-width: 375px;
 }
 
 nav {
-  width: 400px;
-  margin: 10% auto;
+  width: 320px;
+  margin: 20px auto;
 }
 .nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  margin-top: 10%;
 }
 
 .nav-links li {
@@ -74,8 +74,6 @@ nav {
   line-height: 40px;
 }
 
-
-/* Style 3: Just animate the :after element's width from 0 to 100% */
 
 .nav-links li:after {
   content: "";
@@ -92,7 +90,6 @@ nav {
   background-color: #181716;
 }
 
-
 .headline-text {
   text-align: center;
 }
@@ -103,8 +100,6 @@ nav {
   align-items: center;
   font-size: 40px;
 }
-
-
 
 footer {
   font-size: 10px;
